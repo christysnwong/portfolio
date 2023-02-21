@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="public/logo_cw.ico" />
+    <link rel="apple-touch-icon" href="public/logo_cw.png" />
+
+    <title>Christy Wong's Portfolio</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+  </head>
+
+  <body>
+    <nav id="nav">
+      <a href="#about">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+      <div class="container">
+        <div class="container-profile">
+          <div>
+            <img class="profile" src="public/w-mag-glass-ed.svg" />
+          </div>
+          <div>
+            <h1 class="title">Christy Wong</h1>
+
+            <p>
+              I'm a curious, enthusiastic and dedicated software developer who is
+              always eager to learn, grow, and create impactful solutions.
+            </p>
+            <p>
+              During my time at university, I built and maintained websites for
+              student associations as a hobby, and later volunteered my skills.
+              Recently, I graduated from Springboard's Software Engineering
+              Program, where I further devloped my skills in both front-end and
+              back-end development. With a background in the civil engineering and
+              construction management, I am committed to delivering projects on
+              time and within budget. My ability to work collaboratively with
+              multiple teams, combined with strong problem solving, communication
+              and time management skills, has enabled me to consistently deliver
+              projects that meet client expectations.
+            </p>
+            <p>
+              I am confident that my diverse background in engineering and
+              construction management, coupled with my passion for software
+              development, will enable me to bring a unique perspective and skill
+              set to any development project.
+            </p>
+
+            <div class="skills">
+              <h1 class="title">Skills</h1>
+              <h4>Frontend</h4>
+              
+              <div class="lang-icons">
+                <img src="public/icons/javascript-ar21.svg" alt-text="JavaScript" />
+                <img src="public/icons/typescriptlang-ar21.svg" alt-text="TypeScript" />
+                <img src="public/icons/w3_html5-ar21.svg" alt-text="Html5" />
+                <img src="public/icons/w3_css-ar21.svg" alt-text="Css5" />
+                <img src="public/icons/reactjs-ar21.svg" alt-text="Reactjs" />
+                <img src="public/icons/jquery-ar21.svg" alt-text="JQuery" />
+                <img src="public/icons/getbootstrap-ar21.svg" alt-text="Bootstrap" />
+              </div>
+              
+              <h4>Backend</h4>
+              
+              <div class="lang-icons">
+                <img src="public/icons/nodejs-ar21.svg" alt-text="NodeJS" />
+                <img src="public/icons/python-ar21.svg" alt-text="Python" />
+                <img src="public/icons/expressjs-ar21.svg" alt-text="ExpressJS" />
+                <img src="public/icons/pocoo_flask-ar21.svg" alt-text="Flask" />
+                <img src="public/icons/postgresql-ar21.svg" alt-text="PostgreSQL" />
+              </div>
+              
+              <h4>Others</h4>
+              
+              <div class="lang-icons">
+                <img src="public/icons/git-scm-ar21.svg" alt-text="Git" />
+                <img src="public/icons/jasmine-ar21.svg" alt-text="Jasmine" />
+                <img src="public/icons/jestjsio-ar21.svg" alt-text="Jest" />
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div>
+          <h1 class="title">Projects</h1>
+        </div>
+
+        <div class="container-project-full">
+          <div class="proj-description">
+            <h1 class="title-project">Trivia Guru</h1>
+            <p>
+              A web app that utilizes resources from Open Trivia DB which offers
+              over 4000 trivia questions in over 10 categories! It is designed
+              for people who would like to broaden their knowledge and have fun
+              with trivia.
+            </p>
+            <p>
+              <span class="bold">Frontend: </span>React, Reactstrap, Bootstrap, Noty
+            </p>
+            <p>
+              <span class="bold">Backend: </span>NodeJS, PostgreSQL, Json Web Token, Bcrypt, Moment, Json Schema, Nock
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/christysnwong/trivia" target="_blank">Repo</a>
+              <a href="https://triviaguru.surge.sh/" target="_blank">Demo</a>
+            </div>
+          </div>
+          <img class="proj-img move-left hide" src="public/icons-projects/qmark-ed.png" />
+        </div>
+
+        <div class="container-project-full even">
+          <img class="proj-img move-right hide" src="public/icons-projects/salmon.png" />
+          <div class="proj-description">
+            <h1 class="title-project">Cooking Master</h1>
+            <p>
+              A website that utilizes the powerful Spoonacular API to allow site
+              users search and view thousands of recipes! By registering for an
+              account, users can search and save recipes as well as creating
+              their own recipes.
+            </p>
+            <p>
+              <span class="bold">Tech Stack: </span>
+              HTML, Python, SQLAlchemy, PostgreSQL, Flask, Jinja, WTForms, Bootstrap
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/christysnwong/cook" target="_blank">Repo</a>
+              <a href="https://cw-cooking-master.herokuapp.com/" target="_blank">Demo</a>
+            </div>
+            
+          </div>
+          
+        </div>
+
+        <div class="container-project-full">
+          <div class="proj-description">
+            <h1 class="title-project">Weather Dashboard</h1>
+            <p>
+              A simple web app that helps users plan their days by providing the
+              latest weather information. It displays today's weather and
+              weather forecasts for the next 7 days, based on the user's current
+              location. Also, users can save other cities as bookmarks and view
+              their weather information.
+            </p>
+            <p>
+              <span class="bold">Tech Stack: </span>
+              React, TypeScript, CSS
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/christysnwong/weather_typescript" target="_blank">Repo</a>
+              <a href="https://cw-weather.netlify.app/" target="_blank">Demo</a>
+            </div>
+
+          </div>
+          <img class="proj-img move-left hide" src="public/icons-projects/weatherrain-ed.png" />
+        </div>
+
+        <div class="container-project-full even">
+          <img class="proj-img move-right hide" src="public/icons-projects/pokeball-ed2.png" />
+          <div class="proj-description">
+            <h1 class="title-project">Pokemon Memory Game</h1>
+            <p>
+              A Javascript game that allows users to test their memories and match Pokemon cards.
+              Players can challenge themselves by selecting a higher difficulty by adjusting the size of the game board.
+              Gotta catch em all!
+            </p>
+            <p>
+              <span class="bold">Tech Stack: </span>
+              JavaScript, HTML, CSS
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/christysnwong/memorygame" target="_blank">Repo</a>
+              <a href="https://christysnwong.github.io/memorygame/" target="_blank">Demo</a>
+            </div>
+        
+          </div>
+        
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h1 class="title">Contact</h1>
+        <div class="container-contact">
+          <div>
+            <div>
+              <i class="fa-brands fa-linkedin move-right"></i> 
+              <a href="https://www.linkedin.com/in/christy-sn-wong/" target="_blank">linkedin.com/in/christy-sn-wong/</a>
+            </div>
+
+            <div>
+              <i class="fa-brands fa-github move-right"></i>
+              <a href="https://github.com/christysnwong" target="_blank">github.com/christysnwong</a>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-envelope move-right"></i>
+              <a href="mailto:christy.sn.wong@gmail.com" target="_blank">christy.sn.wong@gmail.com</a>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-file-lines move-right"></i>
+              <a href="public/resume_cw.pdf" target="_blank">View my resume</a>
+            </div>
+
+          </div>
+
+          <form id="contact-form" class="contact-form">
+
+            <input type="hidden" name="_url" name="contact_number">
+
+            <label for="name"></label>
+            <input class="input-text" type="text" name="from_name" id="name" placeholder="Name" required>
+
+            <label for="email"></label>
+            <input class="input-text" type="email" name="from_email" id="email" placeholder="Email" required>
+
+            <label for="message"></label>
+            <textarea class="input-textarea" type="text" name="message" id="message" placeholder="Message" required></textarea>
+
+            <button type="submit">Send message</button>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div id="return-msg" class="submitMsg hide">
+      <p></p>
+    </div>
+
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="index.js"></script>
+
+  </body>
+</html>
