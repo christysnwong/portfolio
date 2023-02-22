@@ -51,7 +51,7 @@ a {
   color: var(--grey);
   text-align: center;
   margin: 10px;
-  padding: 10px 15px 3px 15px;
+  padding: 6px 15px;
   text-decoration: none;
   font-weight: 700;
   /* border: 2px dotted var(--dk-green); */
