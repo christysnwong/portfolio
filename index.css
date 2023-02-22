@@ -80,6 +80,7 @@ a:active {
 .container {
   width: 50%;
   margin: 0 auto;
+  padding-top: 30px;
 }
 
 section {
@@ -108,7 +109,7 @@ section {
 #about .container-profile {
   display: flex;
   flex-direction: row;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 #about .profile {
@@ -127,6 +128,8 @@ section {
 #projects {
   background-color: var(--pink);
 }
+
+
 
 #projects .title-project {
   font-size: 30px;
@@ -287,7 +290,6 @@ textarea {
   #about .container-profile {
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
   }
 
   #projects .container-project-full {
@@ -315,7 +317,7 @@ textarea {
 
   #contact .container-contact {
     flex-direction: column;
-    text-align: center;
+    align-items: center;
   }
 
   #contact .contact-form {
@@ -332,9 +334,6 @@ textarea {
     padding: 30px 0;
   }
 
-  #about .container-profile {
-    padding-top: 70px;
-  }
 }
 
 @media (max-width: 768px) {
