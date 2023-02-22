@@ -119,7 +119,7 @@ function moveImageLeftOnScroll() {
     $(".move-left").each(function () {
       if (isImgInViewport(this)) {
         $(this).removeClass("hide");
-        $(this).css("transform", "translateX(-150px)");
+        $(this).css("transform", "translateX(-80px)");
         
       }
     });
@@ -145,7 +145,7 @@ function moveImageRightOnScroll() {
     $(".move-right").each(function () {
       if (isImgInViewport(this)) {
         $(this).removeClass("hide");
-        $(this).css("transform", "translateX(150px)");
+        $(this).css("transform", "translateX(80px)");
 
       }
     });

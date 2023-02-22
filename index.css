@@ -5,6 +5,11 @@
   --dk-green: #349e72;
   --dk-pink: #ead3ca;
   --dk-blue: #22423d;
+
+  --black: #010101;
+  --dk-grey: #4c4846;
+  --grey: #898685;
+  --li-pink: #f3eae4;
 }
 
 html {
@@ -22,7 +27,8 @@ body {
 
 body {
   margin: 0;
-  color: var(--dk-blue);
+  /* color: var(--dk-blue); */
+  color: var(--black);
 }
 
 nav {
@@ -32,7 +38,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--pink);
+  /* background-color: var(--pink); */
+  background-color: var(--li-pink);
   overflow: hidden;
   height: 60px;
   z-index: 2;
@@ -40,13 +47,15 @@ nav {
 
 a {
   display: inline-block;
-  color: var(--dk-green);
+  /* color: var(--dk-green); */
+  color: var(--grey);
   text-align: center;
   margin: 10px;
   padding: 10px 15px 3px 15px;
   text-decoration: none;
   font-weight: 700;
-  border: 2px dotted var(--dk-green);
+  /* border: 2px dotted var(--dk-green); */
+  border: 2px dotted var(--grey);
   border-radius: 10px;
 }
 
@@ -55,8 +64,9 @@ nav a {
 }
 
 a:hover, .active {
-  color: var(--dk-blue);
-  border: 2px dotted var(--dk-blue);
+  color: var(--dk-grey);
+  /* border: 2px dotted var(--dk-blue); */
+  border: 2px dotted var(--dk-grey);
   border-radius: 10px;
 }
 
@@ -67,13 +77,13 @@ a:active {
 
 .move-left {
   position: relative;
-  right: -150px;
+  right: -80px;
   transition: transform 1s ease-in-out;
 }
 
 .move-right {
   position: relative;
-  left: -150px;
+  left: -80px;
   transition: transform 1s ease-in-out;
 }
 
@@ -86,6 +96,10 @@ a:active {
 section {
   padding: 60px;
   text-align: left;
+}
+
+h4 {
+  color: var(--grey);
 }
 
 .bold {
@@ -101,9 +115,9 @@ section {
 
 #about {
   min-height: 100vh;
-  background-image: url("public/titlebg2.png");
+  /* background-image: url("public/titlebg2.png");
   background-size: cover;
-  background-position: center center;
+  background-position: center center; */
 }
 
 #about .container-profile {
@@ -126,14 +140,16 @@ section {
 }
 
 #projects {
-  background-color: var(--pink);
+  /* background-color: var(--pink); */
+  background-color: var(--li-pink);
 }
 
 
 
 #projects .title-project {
   font-size: 30px;
-  color: var(--br-pink);
+  /* color: var(--br-pink); */
+  color: var(--grey);
   margin: 10px 0;
 }
 
@@ -154,7 +170,7 @@ section {
 #projects .proj-img {
   height: 240px;
   width: 320px;
-  transition: visibility 2s, opacity 2s, transform 0.5s linear;
+  transition: visibility 2s, opacity 2s, transform 0.5s ease-in-out;
 }
 
 #projects .project-links {
@@ -170,9 +186,9 @@ section {
 
 #contact {
   min-height: 60vh;
-  background-image: url("public/contactbg4.png");
+  /* background-image: url("public/contactbg4.png");
   background-size: cover;
-  background-position: bottom center;
+  background-position: bottom center; */
 }
 
 button,
@@ -201,7 +217,8 @@ textarea {
   width: 100%;
   height: 2.375rem;
   padding: 15px;
-  border: 1px solid var(--dk-blue);
+  /* border: 1px solid var(--dk-blue); */
+  border: 1px solid var(--dk-grey);
 }
 
 #contact .input-textarea {
@@ -210,25 +227,29 @@ textarea {
   padding: 15px;
   min-height: 120px;
   resize: vertical;
-  border: 1px solid var(--dk-blue);
+  /* border: 1px solid var(--dk-blue); */
+  border: 1px solid var(--dk-grey);
   border-radius: 5px;
 }
 
 #contact button {
   background-color: white;
   display: inline-block;
-  color: var(--dk-green);
+  /* color: var(--dk-green); */
+  color: var(--grey);
   cursor: pointer;
   text-align: center;
   margin: 0px;
   padding: 10px 15px 3px 15px;
   font-weight: 700;
-  border: 2px dotted var(--dk-green);
+  /* border: 2px dotted var(--dk-green); */
+  border: 2px dotted var(--grey);
   border-radius: 10px;
 }
 
 #contact button:hover {
-  border: 2px dotted var(--dk-blue);
+  /* border: 2px dotted var(--dk-blue); */
+  border: 2px dotted var(--dk-grey);
   color: var(--dk-blue);
 }
 
@@ -237,7 +258,8 @@ textarea {
 }
 
 #contact a:hover {
-  border: 2px dotted var(--dk-blue);
+  /* border: 2px dotted var(--dk-blue); */
+  border: 2px dotted var(--dk-grey);
 }
 
 #contact .container-contact {
@@ -261,6 +283,7 @@ textarea {
 }
 
 .submitMsg p.success {
+  /* background-color: var(--br-green); */
   background-color: var(--br-green);
 }
 
