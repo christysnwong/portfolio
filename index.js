@@ -119,7 +119,7 @@ function moveImageLeftOnScroll() {
     $(".move-left").each(function () {
       if (isImgInViewport(this)) {
         $(this).removeClass("hide");
-        $(this).css("transform", "translateX(-80px)");
+        $(this).css("transform", "translateX(-50px)");
         
       }
     });
@@ -128,7 +128,7 @@ function moveImageLeftOnScroll() {
     $(".move-left").each(function () {
       if (isImgInViewport(this)) {
         $(this).removeClass("hide");
-        $(this).css("transform", "translateX(-30px)");
+        $(this).css("transform", "translateX(-20px)");
         
       }
     });
@@ -145,7 +145,7 @@ function moveImageRightOnScroll() {
     $(".move-right").each(function () {
       if (isImgInViewport(this)) {
         $(this).removeClass("hide");
-        $(this).css("transform", "translateX(80px)");
+        $(this).css("transform", "translateX(50px)");
 
       }
     });
@@ -153,7 +153,7 @@ function moveImageRightOnScroll() {
     $(".move-right").each(function () {
       if (isImgInViewport(this)) {
         $(this).removeClass("hide");
-        $(this).css("transform", "translateX(30px)");
+        $(this).css("transform", "translateX(20px)");
 
       }
     });
