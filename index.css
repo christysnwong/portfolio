@@ -13,9 +13,11 @@
   --li-pink: #fff4f8;
   --hot-pink: #f079f3; */
 
+  --vdk-green: #273514;
   --dk-green: #61892f;
   --green: #86c232;
-  /* --li-green: #a3f333; */
+  --li-green: #a3f333; 
+  --vli-green: #bdd46c;
   --black: #222629;
   --dk-grey: #474b4f;
   --grey: #6b6e70;
@@ -48,7 +50,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--black);
+  background-color: var(--vdk-green);
   overflow: hidden;
   height: 60px;
   z-index: 2;
@@ -69,7 +71,7 @@ a {
   margin: 10px;
   padding: 6px 15px;
   text-decoration: none;
-  font-weight: 700;
+  /* font-weight: 700; */
   border: 2px solid var(--li-grey);
   border-radius: 10px;
   background-color: var(--li-grey);
@@ -85,7 +87,7 @@ a:hover, .active {
 
 nav a {
   margin-right: 0px;
-  color: var(--green);
+  color: var(--li-green);
   background-color: transparent;
   border: 2px solid transparent;
 }
@@ -120,7 +122,7 @@ section {
 }
 
 .title-sub {
-  color: var(--dk-green);
+  color: var(--vli-green);
 }
 
 .icon-sub {
@@ -132,7 +134,7 @@ section {
 }
 
 .title-dk, .title-gr, .title-li {
-  font-size: 40px;
+  font-size: 55px;
   margin-top: 0px;
   margin-bottom: 15px;
   text-align: left;
@@ -143,7 +145,7 @@ section {
 }
 
 .title-gr {
-  color: var(--green);
+  color: var(--li-green);
 }
 
 .title-li {
@@ -183,14 +185,14 @@ section {
 }
 
 #projects {
-  background-color: var(--green);
+  background-color: var(--vdk-green);
   color: var(--li-grey);
 }
 
 
 #projects .title-project {
   font-size: 30px;
-  color: var(--dk-grey);
+  color: var(--vli-green);
   margin: 0px 0px 10px 0px;
 }
 
@@ -293,7 +295,7 @@ textarea {
   text-align: center;
   margin: 0px;
   padding: 6px 15px;
-  font-weight: 700;
+  /* font-weight: 700; */
   border: 2px solid var(--li-grey);
   border-radius: 10px;
 }
@@ -344,7 +346,7 @@ textarea {
   display: inline-block;
   padding: 10px 40px;
   border-radius: 10px;
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
 .submitMsg p.success {
@@ -360,8 +362,12 @@ textarea {
   opacity: 0;
 }
 
-.offset-1 {
+.offset-x {
   margin-left: 3px;
+}
+
+.offset-y {
+  margin-top: 30px;
 }
 
 @media (max-width: 1700px) {
@@ -491,7 +497,7 @@ textarea {
   .title-dk,
   .title-li,
   .title-gr {
-    font-size: 30px;
+    font-size: 35px;
   }
 
 
@@ -506,7 +512,7 @@ textarea {
   }
 
   #projects .title-project {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   #projects .container-project-full {
