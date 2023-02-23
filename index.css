@@ -1,17 +1,26 @@
 :root {
   --br-pink: #f0946e;
-  --pink: #ffdcc9;
   --br-green: #caebda;
+  /* --pink: #ffdcc9; 
   --dk-green: #349e72;
   --dk-pink: #ead3ca;
-  --dk-blue: #22423d;
+  --dk-blue: #22423d; */
 
-  --black: #010101;
+  /* --black: #010101;
   --dk-grey: #5e5e5e;
-  --grey: #b0adaf;
-  --li-pink: #f3eae4;
-  /* --li-pink: #fff4f8; */
-  --hot-pink: #f079f3;
+  --grey: #b0adaf; 
+  --lite-pink: #f3eae4;
+  --li-pink: #fff4f8;
+  --hot-pink: #f079f3; */
+
+  --dk-green: #61892f;
+  --green: #86c232;
+  /* --li-green: #a3f333; */
+  --black: #222629;
+  --dk-grey: #474b4f;
+  --grey: #6b6e70;
+  --li-grey: #e0e0e0;
+  --white: #ffffff;
 }
 
 html {
@@ -21,16 +30,15 @@ html {
 
 body {
   position: relative;
+  margin: 0;
+  color: var(--white);
 }
 
 * {
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  color: var(--black);
-}
+
 
 nav {
   position: fixed;
@@ -40,7 +48,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--li-pink);
+  background-color: var(--black);
   overflow: hidden;
   height: 60px;
   z-index: 2;
@@ -56,32 +64,36 @@ nav > div {
 
 a {
   display: inline-block;
-  color: var(--black);
+  color: var(--dk-green);
   text-align: center;
   margin: 10px;
   padding: 6px 15px;
   text-decoration: none;
   font-weight: 700;
-  border: 2px solid var(--black);
+  border: 2px solid var(--li-grey);
   border-radius: 10px;
+  background-color: var(--li-grey);
 }
 
 
 a:hover, .active {
-  color: var(--black);
-  background-color: var(--grey);
-  border: 2px solid var(--black);
+  color: var(--green);
+  background-color: var(--white);
+  border: 2px solid var(--white);
   border-radius: 10px;
-}
-
-a:visited,
-a:active {
-  border: 2px solid transparent;
 }
 
 nav a {
   margin-right: 0px;
+  color: var(--green);
+  background-color: transparent;
   border: 2px solid transparent;
+}
+
+nav a:hover {
+  color: var(--white);
+  background-color: var(--green);
+  border: 2px solid var(--green);
 }
 
 .move-left {
@@ -107,23 +119,43 @@ section {
   text-align: left;
 }
 
-h4 {
-  color: var(--dk-grey);
+.title-sub {
+  color: var(--dk-green);
+}
+
+.icon-sub {
+  color: var(--green);
 }
 
 .bold {
   font-weight: 700;
 }
 
-.title {
+.title-dk, .title-gr, .title-li {
   font-size: 40px;
   margin-top: 0px;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
   text-align: left;
 }
 
+.title-dk {
+  color: var(--black);
+}
+
+.title-gr {
+  color: var(--green);
+}
+
+.title-li {
+  color: var(--white);
+}
+
+
+
 #about {
   min-height: 100vh;
+  background-color: var(--black);
+  color: var(--li-grey);
   /* background-image: url("public/titlebg2.png");
   background-size: cover;
   background-position: center center; */
@@ -145,24 +177,21 @@ h4 {
   width: 70%;
 }
 
-#about p {
-  text-align: justify;
-}
 
 #about .lang-icons img {
   height: 50px;
 }
 
 #projects {
-  background-color: var(--li-pink);
+  background-color: var(--green);
+  color: var(--li-grey);
 }
-
 
 
 #projects .title-project {
   font-size: 30px;
   color: var(--dk-grey);
-  margin: 10px 0;
+  margin: 0px 0px 10px 0px;
 }
 
 #projects .container-project-full {
@@ -175,7 +204,7 @@ h4 {
 }
 
 #projects .proj-description {
-  text-align: justify;
+  /* text-align: justify; */
   width: 50%;
 }
 
@@ -197,7 +226,9 @@ h4 {
 
 
 #contact {
-  min-height: 60vh;
+  min-height: 50vh;
+  background-color: var(--black);
+  color: var(--li-grey);
   /* background-image: url("public/contactbg4.png");
   background-size: cover;
   background-position: bottom center; */
@@ -229,7 +260,7 @@ textarea {
   width: 100%;
   height: 2.375rem;
   padding: 15px;
-  border: 2px solid var(--black);
+  border: 2px solid var(--dk-grey);
 }
 
 #contact .input-textarea {
@@ -238,25 +269,39 @@ textarea {
   padding: 15px;
   min-height: 120px;
   resize: vertical;
-  border: 2px solid var(--black);
+  border: 2px solid var(--dk-grey);
   border-radius: 10px;
 }
 
+#contact a {
+  color: var(--li-grey);
+  background-color: transparent;
+  border: 2px solid transparent;
+}
+
+#contact a:hover {
+  color: var(--white);
+  background-color: var(--green);
+  border: 2px solid var(--green);
+}
+
 #contact button {
-  background-color: white;
+  background-color: var(--li-grey);
   display: inline-block;
-  color: var(--black);
+  color: var(--dk-green);
   cursor: pointer;
   text-align: center;
   margin: 0px;
   padding: 6px 15px;
   font-weight: 700;
-  border: 2px solid var(--black);
+  border: 2px solid var(--li-grey);
   border-radius: 10px;
 }
 
 #contact button:hover {
-  background-color: var(--grey);
+  color: var(--white);
+  background-color: var(--green);
+  border: 2px solid var(--green);
 }
 
 #contact a {
@@ -264,12 +309,26 @@ textarea {
 }
 
 #contact a:hover {
-  border: 2px solid var(--black);
+  border: 2px solid var(--green);
 }
 
 #contact .container-contact {
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 }
+
+.move-left.delay-1 {
+  transition-delay: 0.2s;
+}
+
+
+.move-left.delay-2 {
+  transition-delay: 0.4s;
+}
+
+.move-left.delay-3 {
+  transition-delay: 0.6s;
+}
+
 
 .submitMsg {
   position: absolute;
@@ -285,10 +344,11 @@ textarea {
   display: inline-block;
   padding: 10px 40px;
   border-radius: 10px;
+  font-weight: 700;
 }
 
 .submitMsg p.success {
-  background-color: var(--br-green);
+  background-color: var(--green);
 }
 
 .submitMsg p.error {
@@ -298,6 +358,10 @@ textarea {
 .hide {
   visibility: hidden;
   opacity: 0;
+}
+
+.offset-1 {
+  margin-left: 3px;
 }
 
 @media (max-width: 1700px) {
@@ -325,7 +389,7 @@ textarea {
     flex-direction: column;
   }
 
-  .title {
+  .title-dk, .title-li, .title-gr {
     text-align: center;
   }
 
@@ -353,7 +417,7 @@ textarea {
   }
 
   #projects .proj-description {
-    text-align: justify;
+    /* text-align: justify; */
     width: 100%;
   }
 
@@ -424,7 +488,9 @@ textarea {
     width: 90%;
   }
 
-  .title {
+  .title-dk,
+  .title-li,
+  .title-gr {
     font-size: 30px;
   }
 
