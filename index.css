@@ -47,14 +47,16 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
+  height: 60px;
   padding: 0px 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--vdk-green);
   overflow: hidden;
-  height: 60px;
   z-index: 2;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 nav > div {
@@ -124,6 +126,7 @@ section {
 
 .title-sub {
   color: var(--vli-green);
+  margin: 30px 0px 20px 0px;
 }
 
 .icon-sub {
@@ -135,7 +138,7 @@ section {
 }
 
 .title-dk, .title-gr, .title-li {
-  font-size: 55px;
+  font-size: 45px;
   margin-top: 0px;
   margin-bottom: 15px;
   text-align: left;
@@ -153,7 +156,17 @@ section {
   color: var(--white);
 }
 
+.title-logo {
+  color: var(--vli-green);
+  margin-left: 8px;
+  font-size: 20px;
+}
 
+#logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 
 #about {
   min-height: 100vh;
@@ -162,6 +175,21 @@ section {
   /* background-image: url("public/titlebg2.png");
   background-size: cover;
   background-position: center center; */
+}
+
+#about a {
+  color: var(--li-green);
+  font-size: inherit;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+}
+
+#about a:hover {
+  text-decoration: underline;
+
+
 }
 
 #about .container-profile {
@@ -452,6 +480,11 @@ textarea {
     padding: 0px;
   }
 
+  a {
+    margin: 4px;
+    padding: 6px 10px;
+  }
+
   section {
     padding: 30px 0;
   }
@@ -487,6 +520,10 @@ textarea {
     font-size: 15px;
   }
 
+  nav {
+    font-size: 14px;
+  }
+
   nav>div {
     width: 90%;
   }
@@ -502,10 +539,10 @@ textarea {
   }
 
 
-  a {
+  /* a {
     margin: 4px;
     padding: 6px 10px;
-  }
+  } */
 
   #about .profile {
     width: 120px;
@@ -529,5 +566,9 @@ textarea {
 @media (max-width: 300px) {
   html {
     font-size: 13px;
+  }
+
+  nav {
+    font-size: 12px;
   }
 }
