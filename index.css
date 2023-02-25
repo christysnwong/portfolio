@@ -74,7 +74,6 @@ a {
   margin: 10px;
   padding: 6px 15px;
   text-decoration: none;
-  /* font-weight: 700; */
   border: 2px solid var(--li-grey);
   border-radius: 10px;
   background-color: var(--li-grey);
@@ -85,7 +84,6 @@ a:hover, .active {
   color: var(--green);
   background-color: var(--white);
   border: 2px solid var(--white);
-  border-radius: 10px;
 }
 
 nav a {
@@ -130,7 +128,7 @@ section {
 }
 
 .icon-sub {
-  color: var(--green);
+  color: var(--vli-green);
 }
 
 .bold {
@@ -158,8 +156,15 @@ section {
 
 .title-logo {
   color: var(--vli-green);
-  margin-left: 8px;
+  margin-left: 0px;
   font-size: 20px;
+  padding: 0;
+  border: 0;
+}
+
+.title-logo:hover {
+  background-color: transparent;
+  border: 0;
 }
 
 #logo {
@@ -168,13 +173,49 @@ section {
   align-items: center;
 }
 
-#about {
+#intro {
   min-height: 100vh;
   background-color: var(--black);
   color: var(--li-grey);
-  /* background-image: url("public/titlebg2.png");
+  background-image: url("public/titlebg3-2.png");
   background-size: cover;
-  background-position: center center; */
+  background-position: center center;
+
+}
+
+#intro .container {
+  padding-top: 0px;
+}
+
+#intro .title-sub {
+  margin-top: 0px;
+}
+
+#intro .title-name {
+  color: var(--li-green);
+  font-size: 75px;
+  margin: 10px 0px;
+}
+
+#intro .title-headline {
+  color: var(--grey);
+  font-size: 30px;
+  margin: 0px 0px 20px 0px;
+}
+
+#intro .container-intro {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+#about {
+  /* min-height: 100vh; */
+  background-color: var(--black);
+  color: var(--li-grey);
+  
 }
 
 #about a {
@@ -195,13 +236,12 @@ section {
 #about .container-profile {
   display: flex;
   flex-direction: row;
-  padding-top: 30px;
   justify-content: space-between;
 }
 
 #about .profile {
-  width: 180px;
-  height: 300px;
+  width: 210px;
+  height: 350px;
 }
 
 #about .profile-desc {
@@ -235,7 +275,6 @@ section {
 }
 
 #projects .proj-description {
-  /* text-align: justify; */
   width: 50%;
 }
 
@@ -258,11 +297,8 @@ section {
 
 #contact {
   min-height: 50vh;
-  background-color: var(--black);
+  background-color: var(--vdk-green);
   color: var(--li-grey);
-  /* background-image: url("public/contactbg4.png");
-  background-size: cover;
-  background-position: bottom center; */
 }
 
 button,
@@ -324,15 +360,14 @@ textarea {
   text-align: center;
   margin: 0px;
   padding: 6px 15px;
-  /* font-weight: 700; */
   border: 2px solid var(--li-grey);
   border-radius: 10px;
 }
 
 #contact button:hover {
-  color: var(--white);
-  background-color: var(--green);
-  border: 2px solid var(--green);
+  color: var(--green);
+  background-color: var(--white);
+  border: 2px solid var(--white);
 }
 
 #contact a {
@@ -375,7 +410,6 @@ textarea {
   display: inline-block;
   padding: 10px 40px;
   border-radius: 10px;
-  /* font-weight: 700; */
 }
 
 .submitMsg p.success {
@@ -435,6 +469,12 @@ textarea {
   #about .container-profile {
     display: flex;
     flex-direction: column;
+    row-gap: 30px;
+  }
+
+  #about .profile {
+    width: 180px;
+    height: 300px;
   }
 
   #about .profile-desc {
@@ -489,6 +529,18 @@ textarea {
     padding: 30px 0;
   }
 
+  #intro .title-name {
+    color: var(--li-green);
+    font-size: 50px;
+    margin: 10px 0px;
+  }
+
+  #intro .title-headline {
+    color: var(--grey);
+    font-size: 24px;
+    margin: 0px 0px 20px 0px;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -513,6 +565,8 @@ textarea {
   .move-right {
     left: -20px;
   }
+
+
 }
 
 @media (max-width: 576px) {
@@ -538,15 +592,22 @@ textarea {
     font-size: 35px;
   }
 
+  #intro .title-name {
+    font-size: 40px;
+  }
 
-  /* a {
-    margin: 4px;
-    padding: 6px 10px;
-  } */
+  #intro .title-headline {
+    
+    font-size: 18px;
+  }
 
   #about .profile {
     width: 120px;
     height: 200px;
+  }
+
+  #about .lang-icons img {
+    height: 35px;
   }
 
   #projects .title-project {
@@ -561,6 +622,8 @@ textarea {
     height: 150px;
     width: 200px;
   }
+
+
 }
 
 @media (max-width: 300px) {
@@ -571,4 +634,20 @@ textarea {
   nav {
     font-size: 12px;
   }
+
+  #intro .title-name {
+    font-size: 30px;
+  }
+
+  #intro .title-headline {
+
+    font-size: 15px;
+  }
+
+  .title-dk,
+  .title-li,
+  .title-gr {
+    font-size: 30px;
+  }
+
 }
